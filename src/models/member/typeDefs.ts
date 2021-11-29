@@ -13,7 +13,7 @@ const typeDefs = gql`
     lastName: String
     queue: ID!
     phoneNumber: String
-    number: Number!
+    number: Int!
     status: MemberStatus!
     position: ID
     createdAt: Date!

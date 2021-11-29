@@ -1,15 +1,10 @@
 import { gql } from 'apollo-server';
 
 const typeDefs = gql`
-  enum PositionStatus {
-    ACTIVE
-    INACTIVE
-  }
-
   type Member {
     _id: ID!
     name: String!
-    status: PositionStatus!
+    status: MemberStatus!
     createdAt: Date!
     updatedAt: Date!
   }

@@ -14,6 +14,10 @@ const typeDefs = gql`
     createdAt: Date!
     updatedAt: Date!
   }
+
+  extend type Mutation {
+    createNewQueue(queueName: String!): Boolean
+  }
 `;
 
 export default typeDefs;
